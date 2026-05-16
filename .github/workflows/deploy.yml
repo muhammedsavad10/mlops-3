@@ -25,6 +25,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+        pip install boto3 scikit-learn sagemaker==2.199.0
     - name: training the model
       run: python train.py
     - name: packaging the model
